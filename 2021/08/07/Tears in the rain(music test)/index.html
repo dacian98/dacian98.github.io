@@ -138,6 +138,16 @@
 <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=480751&auto=1&height=66"></iframe>
 
 
+    <figure class="figure-image">
+      <img src="https://qiniu.sukoshi.xyz/src/images/68686407_p0.jpg" alt="带描述的图片样例" loading="lazy" />
+      <figcaption>带描述的图片样例</figcaption>
+    </figure>
+  
+
+<div class="aplayer-box" data-url='https://dacian98.github.io/public/music/pandemonium.mp3' data-name='Pandemonium (Tribute Version)' data-artist='Mondays feat. Hanna Stone, Dag Lundberg' data-cover='https://z3.ax1x.com/2021/08/08/fQKtTH.png' ></div>
+
+<p>更新成功 215</p>
+
       </section>
 
       
@@ -277,6 +287,34 @@
 
   
   <!-- aplayer -->
+
+
+  <!-- aplayer 音频 start -->
+  <link rel="stylesheet" href="https://unpkg.com/aplayer@1.10.1/dist/APlayer.min.css">
+  <script type="text/javascript" src="https://unpkg.com/aplayer@1.10.1/dist/APlayer.min.js"></script>
+  <script type="text/javascript">
+    const aplayer = document.querySelectorAll(".aplayer-box");
+    aplayer && initaplayer(aplayer);
+    function initaplayer(els) {
+      let elsArr = Array.from(els);
+      elsArr.forEach(el => {
+        let params = {
+          container: el,
+          audio: { ...el.dataset },
+          theme: "#b7daff",
+          autoplay: false,
+          loop: false,
+          mutex: true,
+        }
+        if (el.dataset.lrc) {
+          params['lrcType'] = 3
+        }
+        new APlayer(params);
+      });
+    }
+  </script>
+  <!-- aplayer 音频 end -->
+  
 
 
 <!-- dplayer -->
