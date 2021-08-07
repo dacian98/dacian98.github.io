@@ -398,7 +398,7 @@ html.show-mobile-nav .navbar-list {
   margin: 0;
   flex: 0 1 300px;
   color: var(--theme-text-light);
-  font-size: var(--font-stress-size);
+  font-size: 0;
   font-weight: bolder;
 }
 .navbar-logo a {
