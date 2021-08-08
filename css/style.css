@@ -618,7 +618,7 @@ html.show-mobile-nav .navbar-list {
 }
 .title-wrap {
   font-size: var(--font-large-size);
-  font-weight: bolder;
+  font-weight: normal;
   overflow: hidden;
   text-overflow: ellipsis;
   word-break: break-word;
