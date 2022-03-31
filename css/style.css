@@ -40,18 +40,18 @@
   --soft-shadow: 3px;
 }
 :root.theme-light {
-  --theme-bg-primary: #1e2428;
-  --theme-bg-high: #303a40;
-  --theme-bg-shadow: #0c0e10;
-  --theme-bg-actvie1: #1b2024;
-  --theme-bg-actvie2: #20272b;
-  --theme-text-active: #ca5388;
-  --theme-text-light: #d7dfe6;
-  --theme-text-primary: #adbac7;
-  --theme-text-low: #444c56;
-  --theme-text-stress: #cdd9e5;
-  --theme-border-primary: #444c56;
-  --theme-border-secondary: #373e47;
+  --theme-bg-primary: #f5f8fa;
+  --theme-bg-high: #fff;
+  --theme-bg-shadow: #dddfe1;
+  --theme-bg-actvie1: #dddfe1;
+  --theme-bg-actvie2: #fff;
+  --theme-text-active: #f857a6;
+  --theme-text-light: #fff;
+  --theme-text-primary: #3e3e5f;
+  --theme-text-low: #aeacb1;
+  --theme-text-stress: #14281d;
+  --theme-border-primary: #e1e4e8;
+  --theme-border-secondary: #ebedef;
 }
 :root.theme-dark {
   --theme-bg-primary: #1e2428;
@@ -69,18 +69,18 @@
 }
 @media (prefers-color-scheme: light) {
   :root {
-    --theme-bg-primary: #1e2428;
-    --theme-bg-high: #303a40;
-    --theme-bg-shadow: #0c0e10;
-    --theme-bg-actvie1: #1b2024;
-    --theme-bg-actvie2: #20272b;
-    --theme-text-active: #ca5388;
-    --theme-text-light: #d7dfe6;
-    --theme-text-primary: #adbac7;
-    --theme-text-low: #444c56;
-    --theme-text-stress: #cdd9e5;
-    --theme-border-primary: #444c56;
-    --theme-border-secondary: #373e47;
+    --theme-bg-primary: #f5f8fa;
+    --theme-bg-high: #fff;
+    --theme-bg-shadow: #dddfe1;
+    --theme-bg-actvie1: #dddfe1;
+    --theme-bg-actvie2: #fff;
+    --theme-text-active: #f857a6;
+    --theme-text-light: #fff;
+    --theme-text-primary: #3e3e5f;
+    --theme-text-low: #aeacb1;
+    --theme-text-stress: #14281d;
+    --theme-border-primary: #e1e4e8;
+    --theme-border-secondary: #ebedef;
   }
 }
 @media (prefers-color-scheme: dark) {
@@ -398,7 +398,7 @@ html.show-mobile-nav .navbar-list {
   margin: 0;
   flex: 0 1 300px;
   color: var(--theme-text-light);
-  font-size: 0;
+  font-size: var(--font-stress-size);
   font-weight: bolder;
 }
 .navbar-logo a {
@@ -618,7 +618,7 @@ html.show-mobile-nav .navbar-list {
 }
 .title-wrap {
   font-size: var(--font-large-size);
-  font-weight: normal;
+  font-weight: bolder;
   overflow: hidden;
   text-overflow: ellipsis;
   word-break: break-word;
